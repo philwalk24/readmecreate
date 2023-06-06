@@ -56,6 +56,7 @@ function init() {
          credits = answer.b10;
          // there are 3 licenses the user can pick, these ifs
          // determine which one they picked
+         // used this site for help: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
          if(answer.b6 == 1)
          {
             licence = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
@@ -76,6 +77,9 @@ function init() {
     .then((answer) =>{
         // now we create a skeleton for the README with the info the 
         // user has inputted
+
+        // to make clickable links, chatgpt helped me with that
+        // https://chat.openai.com/
         const readmeContent = `
 # ${proj}
 
